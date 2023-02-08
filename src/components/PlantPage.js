@@ -1,14 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
 function PlantPage({plantList, setPlantList}) {
+  const [searchQuery, setSearchQuery] = useState('')
+
+  function handleChange(event) {
+    setSearchQuery(event.target.value)
+    
+  }
+
+  let filteredList = plantList.filter(plant => {
+    return plant.name.toLowerCase().includes(searchQuery.toLowerCase())
+  })
+
+
+
   return (
     <main>
-      <NewPlantForm />
-      <Search />
-      <PlantList plantList={plantList} setPlantList={setPlantList} />
+      <NewPlantForm setPlantList={setPlantList} />
+      <Search handleChange={handleChange}/>
+      <PlantList plantList={filteredList} setPlantList={setPlantList} />
     </main>
   );
 }

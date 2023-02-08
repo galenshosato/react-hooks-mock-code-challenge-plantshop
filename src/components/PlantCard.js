@@ -1,10 +1,24 @@
 import React, {useState} from "react";
 
-function PlantCard({plant}) {
-  const [isInStock, setIsInStock] =useState(true)
+function PlantCard({plant, setPlantList}) {
+  const [isInStock, setIsInStock] = useState(true)
 
   function handleClick(event) {
     setIsInStock(prev => !prev)
+  }
+
+  function deletePlant(id) {
+    fetch(`http://localhost:6001/plants/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json' 
+      }
+    } )
+    .then(resp => resp.json())
+
+    setPlantList(prev => prev.filter(plant => {
+      return plant.id !== id
+    }))
   }
 
 
@@ -16,7 +30,7 @@ function PlantCard({plant}) {
       {isInStock ? (
         <button className="primary" onClick={handleClick}>In Stock</button>
       ) : (
-        <button>Out of Stock</button>
+        <button onClick={() => deletePlant(plant.id)}>Out of Stock</button>
       )}
     </li>
   );

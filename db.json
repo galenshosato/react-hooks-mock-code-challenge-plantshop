@@ -53,6 +53,42 @@
       "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
       "price": "5",
       "id": 9
+    },
+    {
+      "name": "Fern-3",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "1",
+      "id": 10
+    },
+    {
+      "name": "fern-4",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "100",
+      "id": 11
+    },
+    {
+      "name": "fern-5",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "50",
+      "id": 12
+    },
+    {
+      "name": "fern-6",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "20",
+      "id": 13
+    },
+    {
+      "name": "fern-7",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "40",
+      "id": 14
+    },
+    {
+      "name": "fern-8",
+      "image": "https://images.pexels.com/photos/1055379/pexels-photo-1055379.jpeg?cs=srgb&dl=pexels-daniel-frese-1055379.jpg&fm=jpg",
+      "price": "50",
+      "id": 15
     }
   ]
 }

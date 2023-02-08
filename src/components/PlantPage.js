@@ -19,7 +19,7 @@ function PlantPage({plantList, setPlantList}) {
 
   return (
     <main>
-      <NewPlantForm setPlantList={setPlantList} />
+      <NewPlantForm setPlantList={setPlantList} plantList={plantList} />
       <Search handleChange={handleChange}/>
       <PlantList plantList={filteredList} setPlantList={setPlantList} />
     </main>

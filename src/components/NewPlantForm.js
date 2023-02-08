@@ -19,9 +19,8 @@ function NewPlantForm({setPlantList}) {
       body: JSON.stringify(newPlant)
     })
     .then(resp => resp.json())
-    .then(data => console.log(data))
     
-    event.reset()
+    setPlantList(prev => [...prev,newPlant])
 
   }
 
